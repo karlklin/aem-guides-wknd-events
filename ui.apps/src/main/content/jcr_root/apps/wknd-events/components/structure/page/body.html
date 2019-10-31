@@ -2,4 +2,13 @@
 - body.html
 - includes div that will be targeted by SPA
 */-->
+
+
+<sly data-sly-test.notEmpty="${pageProperties['headerxf']}"
+     data-sly-resource="${pageProperties['headerxf']}"></sly>
+
 <div id="root"></div>
+
+<sly data-sly-test.notEmpty="${pageProperties['footerxf']}"
+     data-sly-resource="${pageProperties['footerxf']}"></sly>
+
