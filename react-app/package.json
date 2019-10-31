@@ -28,7 +28,7 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
   },
-  "proxy": "http://localhost:4502",
+  "proxy": "http://localhost:4501",
   "eslintConfig": {
     "extends": "react-app"
   },
