@@ -52,7 +52,7 @@
                         <granite:rendercondition
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
-                                expression="${param.item == '/conf/wknd-events/settings/wcm/templates/wknd-events-page-template/initial'}"/>
+                                expression="${granite:contains(param.item, '/conf/wknd-events')}"/>
                     </headerFooter>
                 </items>
             </tabs>
