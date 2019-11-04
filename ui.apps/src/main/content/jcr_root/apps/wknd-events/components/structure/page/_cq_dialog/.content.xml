@@ -36,17 +36,23 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                             fieldLabel="Header"
                                             rootPath="/content/experience-fragments"
-                                            name="./headerxf"/>
+                                            name="./headerxf">
+                                    </header>
                                     <footer
                                             cq:showOnCreate="{Boolean}true"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                             fieldLabel="Footer"
                                             rootPath="/content/experience-fragments"
-                                            name="./footerxf"/>
+                                            name="./footerxf">
+                                    </footer>
                                 </items>
                             </column>
                         </items>
+                        <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
+                                expression="${param.item == '/conf/wknd-events/settings/wcm/templates/wknd-events-page-template/initial'}"/>
                     </headerFooter>
                 </items>
             </tabs>
